@@ -92,7 +92,7 @@ public class Model {
 			System.out.println("Nessun aeroporto vicino trovato");
 		}
 		for (Airport temp: toVisit) {
-			if(!parziale.contains(temp)  && parziale.size()+1<=t) {
+			if(!parziale.contains(temp)  && parziale.size()<=t) {
 				parziale.add(temp);
 				cerca(a1,parziale,a2,t);
 				parziale.remove(parziale.size()-1);

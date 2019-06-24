@@ -130,7 +130,7 @@ public class ExtFlightDelaysDAO {
 		
 		List<Rotta> res = new ArrayList<>();
 		
-		String sql = "SELECT ORIGIN_AIRPORT_ID AS ID1, DESTINATION_AIRPORT_ID AS ID2, COUNT(DISTINCT AIRLINE_ID) AS VOLI " + 
+		String sql = "SELECT ORIGIN_AIRPORT_ID AS ID1, DESTINATION_AIRPORT_ID AS ID2, COUNT(AIRLINE_ID) AS VOLI " + 
 				"FROM flights " + 
 				"GROUP BY ID1,ID2 ";
 		try {

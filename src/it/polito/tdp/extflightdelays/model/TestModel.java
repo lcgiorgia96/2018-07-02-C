@@ -6,6 +6,9 @@ public class TestModel {
 		
 		Model model = new Model();
 
+		model.creaGrafo(10);
+		
+		
 	}
 
 }

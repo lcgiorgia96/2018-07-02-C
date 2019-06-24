@@ -48,6 +48,8 @@ public class Model {
 			DefaultWeightedEdge edge = grafo.getEdge(a1, a2);
 			if (edge==null) {
 				Graphs.addEdge(this.grafo, a1, a2, peso);
+			} else {
+				grafo.setEdgeWeight(edge, grafo.getEdgeWeight(edge)+peso);
 			}
 		}
 		
